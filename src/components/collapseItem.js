@@ -28,14 +28,14 @@ export default class Collapse extends Component {
 
   render () {
     const { title, description, visible, count } = this.state;
+
     const descriptionStyle = {
       display: visible ? 'block' : 'none',
       background: '#CCC'
     };
 
     return <div data-component="collapse">
-      <h2 onClick={this.toggleVisibility.bind(this)}>{title}</h2>
-      <h3>{count}</h3>
+      <h2 onClick={this.toggleVisibility.bind(this)}>{title} - {count}</h2>
       <p style={descriptionStyle}>{description}</p>
     </div>;
   }
