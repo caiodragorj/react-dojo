@@ -6,13 +6,13 @@ import {Row,Col} from 'react-bootstrap';
 
 import CollapseItem from './collapseItem';
 
-const CollapseList = ({itens}) =>
+const CollapseList = ({items}) =>
   <Row>
-    {itens.map((item, i) => {
-      item.title += ` - ${i}`;
+    {items.map((buffer, index) => {
+      buffer.title += ` - ${index}`;
       return (
         <Col md={3}>
-          <CollapseItem title={item.title} description={item.description} />
+          <CollapseItem key={index} title={buffer.title} description={buffer.description} />
         </Col>
       );
     })}

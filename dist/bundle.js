@@ -60,7 +60,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var itens = [{
+	var items = [{
 	  title: "item 1",
 	  description: "description 1"
 	}, {
@@ -20195,16 +20195,16 @@
 	/* globals window */
 	
 	var CollapseList = function CollapseList(_ref) {
-	  var itens = _ref.itens;
+	  var items = _ref.items;
 	  return _react2.default.createElement(
 	    _reactBootstrap.Row,
 	    null,
-	    itens.map(function (item, i) {
-	      item.title += ' - ' + i;
+	    items.map(function (buffer, index) {
+	      buffer.title += ' - ' + index;
 	      return _react2.default.createElement(
 	        _reactBootstrap.Col,
 	        { md: 3 },
-	        _react2.default.createElement(_collapseItem2.default, { title: item.title, description: item.description })
+	        _react2.default.createElement(_collapseItem2.default, { key: index, title: buffer.title, description: buffer.description })
 	      );
 	    })
 	  );

@@ -3,9 +3,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import CollapseList from './collapseList.js';
+import CollapseList from './components/collapseList.js';
 
-const itens=[{
+const items = [{
   title:"item 1",
   description:"description 1"
 },{
