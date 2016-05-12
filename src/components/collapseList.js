@@ -10,8 +10,8 @@ const CollapseList = ({items}) =>
   <Row>
     {items.map((buffer, index) => {
       return (
-        <Col md={6} sm={3}>
-          <CollapseItem key={index} title={buffer.title} description={buffer.description} />
+        <Col key={index} md={6} sm={3}>
+          <CollapseItem title={buffer.title} description={buffer.description} />
         </Col>
       );
     })}
