@@ -34,20 +34,21 @@ gulp.task('webpack', function() {
 });
 
 gulp.task('webserver', function() {
-  return gulp.src(paths.dist)
+  return gulp.src('./')
     .pipe(webserver({
         livereload: true,
-        directoryListing: false,
-        port: 8080,
-        fallback: 'index.html',
+        directoryListing: true,
+        port: 3000,
+        open: true,
+        path: '/',
+        fallback: './index.html'
       }));
 });
 
 gulp.task('build', ['clean', 'webpack']);
 
 gulp.task('watch', function() {
-  gulp.watch(['src/**/*.html'], ['html']);
-  gulp.watch(['src/*/scripts/**/*'], ['webpack']);
+  gulp.watch(['src/**/*'], ['webpack']);
 });
 
 gulp.task('serve', ['build', 'webserver', 'watch']);

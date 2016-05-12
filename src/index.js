@@ -1,13 +1,22 @@
 /* globals window */
 
-'use strict';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-const BoilerplaceModule = bar => {
-  const foo = bar => bar;
+import CollapseList from './collapseList.js';
 
-  return {
-    foo
-  }
-};
+const itens=[{
+  title:"item 1",
+  description:"description 1"
+},{
+  title:"item 2",
+  description:"description 2"
+}]
 
-export default BoilerplaceModule;
+const App = () =>
+  <div>
+    <CollapseList itens={itens}/>
+  </div>
+;
+
+ReactDOM.render(<App />, document.getElementById('app'));
