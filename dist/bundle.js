@@ -56,43 +56,26 @@
 	
 	var _reactBootstrap = __webpack_require__(168);
 	
-	var _collapseList = __webpack_require__(433);
+	var _data = __webpack_require__(433);
 	
-	var _collapseList2 = _interopRequireDefault(_collapseList);
+	var _data2 = _interopRequireDefault(_data);
+	
+	var _ProductList = __webpack_require__(434);
+	
+	var _ProductList2 = _interopRequireDefault(_ProductList);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	/* globals window */
-	
-	var items = [{
-	  title: "item 1",
-	  description: "description 1"
-	}, {
-	  title: "item 2",
-	  description: "description 2"
-	}, {
-	  title: "item 3",
-	  description: "description 3"
-	}, {
-	  title: "item 4",
-	  description: "description 4"
-	}, {
-	  title: "item 5",
-	  description: "description 5"
-	}, {
-	  title: "item 6",
-	  description: "description 6"
-	}];
-	
-	var App = function App() {
+	var App = function App(_ref) {
+	  var products = _ref.products;
 	  return _react2.default.createElement(
 	    _reactBootstrap.Grid,
 	    null,
-	    _react2.default.createElement(_collapseList2.default, { items: items })
+	    _react2.default.createElement(_ProductList2.default, { products: products })
 	  );
-	};
+	}; /* globals window */
 	
-	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(App, _data2.default), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -39379,6 +39362,94 @@
 
 /***/ },
 /* 433 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  products: [{
+	    title: 'TV Phillips',
+	    description: 'TV 150\" 4k',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 1500.00
+	  }, {
+	    title: 'Notebook Dell 15\"',
+	    description: 'Notebook 1080p',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 990.90
+	  }, {
+	    title: 'Motorola X2',
+	    description: 'Preto 3G',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 499.90
+	  }, {
+	    title: 'Samsung Galaxy S9',
+	    description: 'NextGen!',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 1200.00
+	  }, {
+	    title: 'Bola Adidas A90',
+	    description: '2018 World Cup',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 119.90
+	  }, {
+	    title: 'Assassin Creed 8 - PS6',
+	    description: 'Follow cyborg Eliot through 2590 NY City',
+	    image: 'http://placehold.it/250x250',
+	    discount: 10,
+	    price: 349.90
+	  }]
+	};
+
+/***/ },
+/* 434 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactBootstrap = __webpack_require__(168);
+	
+	var _ProductCard = __webpack_require__(435);
+	
+	var _ProductCard2 = _interopRequireDefault(_ProductCard);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var ProductList = function ProductList(_ref) {
+	  var products = _ref.products;
+	  return _react2.default.createElement(
+	    _reactBootstrap.Row,
+	    null,
+	    products.map(function (buffer, index) {
+	      return _react2.default.createElement(
+	        _reactBootstrap.Col,
+	        { key: index + 1, sm: 12, md: 6, lg: 4 },
+	        _react2.default.createElement(_ProductCard2.default, buffer)
+	      );
+	    })
+	  );
+	};
+	
+	exports.default = ProductList;
+
+/***/ },
+/* 435 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39397,126 +39468,40 @@
 	
 	var _reactBootstrap = __webpack_require__(168);
 	
-	var _collapseItem = __webpack_require__(434);
-	
-	var _collapseItem2 = _interopRequireDefault(_collapseItem);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	/* globals window */
-	
-	var CollapseList = function CollapseList(_ref) {
-	  var items = _ref.items;
+	var ProductCard = function ProductCard(props) {
 	  return _react2.default.createElement(
-	    _reactBootstrap.Row,
+	    'div',
 	    null,
-	    items.map(function (buffer, index) {
-	      return _react2.default.createElement(
-	        _reactBootstrap.Col,
-	        { md: 6, sm: 3 },
-	        _react2.default.createElement(_collapseItem2.default, { key: index, title: buffer.title, description: buffer.description })
-	      );
-	    })
+	    _react2.default.createElement(
+	      'h1',
+	      null,
+	      props.title
+	    ),
+	    _react2.default.createElement('img', { src: props.image }),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Description: ',
+	      props.description
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Discount: ',
+	      props.discount
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      null,
+	      'Price: ',
+	      props.price
+	    )
 	  );
-	};
+	}; /* globals window */
 	
-	exports.default = CollapseList;
-
-/***/ },
-/* 434 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var Collapse = function (_Component) {
-	  _inherits(Collapse, _Component);
-	
-	  function Collapse(props) {
-	    _classCallCheck(this, Collapse);
-	
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Collapse).call(this, props));
-	
-	    _this.state = {
-	      visible: true,
-	      title: undefined,
-	      description: undefined,
-	      count: 0
-	    };
-	    return _this;
-	  }
-	
-	  _createClass(Collapse, [{
-	    key: 'componentWillMount',
-	    value: function componentWillMount() {
-	      this.setState({
-	        title: this.props.title,
-	        description: this.props.description
-	      });
-	    }
-	  }, {
-	    key: 'toggleVisibility',
-	    value: function toggleVisibility() {
-	      this.setState({
-	        visible: !this.state.visible,
-	        count: this.state.count + this.state.visible
-	      });
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var _state = this.state;
-	      var title = _state.title;
-	      var description = _state.description;
-	      var visible = _state.visible;
-	      var count = _state.count;
-	
-	
-	      var descriptionStyle = {
-	        display: visible ? 'block' : 'none',
-	        background: '#CCC'
-	      };
-	
-	      return _react2.default.createElement(
-	        'div',
-	        { 'data-component': 'collapse' },
-	        _react2.default.createElement(
-	          'h2',
-	          { onClick: this.toggleVisibility.bind(this) },
-	          title,
-	          ' - ',
-	          count
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { style: descriptionStyle },
-	          description
-	        )
-	      );
-	    }
-	  }]);
-	
-	  return Collapse;
-	}(_react.Component);
-	
-	exports.default = Collapse;
+	exports.default = ProductCard;
 
 /***/ }
 /******/ ]);

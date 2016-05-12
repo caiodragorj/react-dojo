@@ -4,32 +4,14 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Grid } from 'react-bootstrap';
 
-import CollapseList from './components/collapseList.js';
+import data from './data';
+import ProductList from './components/ProductList.js';
 
-const items = [{
-  title:"item 1",
-  description:"description 1"
-},{
-  title:"item 2",
-  description:"description 2"
-},{
-  title:"item 3",
-  description:"description 3"
-},{
-  title:"item 4",
-  description:"description 4"
-},{
-  title:"item 5",
-  description:"description 5"
-},{
-  title:"item 6",
-  description:"description 6"
-}];
 
-const App = () =>
+const App = ({products}) =>
   <Grid>
-    <CollapseList items={items}/>
+    <ProductList products={products} />
   </Grid>
 ;
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App {...data} />, document.getElementById('app'));
