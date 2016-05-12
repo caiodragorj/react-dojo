@@ -15,7 +15,7 @@ const items = [{
 
 const App = () =>
   <div>
-    <CollapseList itens={itens}/>
+    <CollapseList items={items}/>
   </div>
 ;
 

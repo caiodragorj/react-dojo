@@ -72,7 +72,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_collapseList2.default, { itens: itens })
+	    _react2.default.createElement(_collapseList2.default, { items: items })
 	  );
 	};
 	
