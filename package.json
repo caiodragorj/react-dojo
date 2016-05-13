@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "start": "./node_modules/gulp/bin/gulp.js serve",
+    "prestart": "rm -rf dist",
     "build": "./node_modules/gulp/bin/gulp.js build"
   },
   "author": "B2W Digital",
