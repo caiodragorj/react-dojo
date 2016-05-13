@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react';
 import {ButtonToolbar, Button} from 'react-bootstrap'
 
 const SharedButton = ({ amount, onClickShared }) => {
