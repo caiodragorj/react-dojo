@@ -3,8 +3,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Grid } from 'react-bootstrap';
+import data from 'json!./data-product.json';
 
-import data from './data';
 import ProductList from './components/ProductList.js';
 
 

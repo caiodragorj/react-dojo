@@ -1,0 +1,286 @@
+{
+  "products": [{
+    "id": "405864",
+    "name": "Computador E4500 com Intel® Core 2 Duo 2GB 250GB DVD-RW Windows Vista Premium - Itautec",
+    "saleClassification": "C",
+    "supplier": "Itautec",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/405/8/405864P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/405/8/405864G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/405/8/405864GG.jpg"
+    }],
+    "skus": [{
+      "id": "405865",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/405865"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/405864"
+      }
+    }
+  }, {
+    "id": "7158811",
+    "name": "Computador PCTV 3160 - Positivo  - E5400 Edição Verde Amarelo c/ Intel® Pentium Dual Core  2.7GHz 4GB 750GB DVD-RW Windows 7 Basic",
+    "saleClassification": "C",
+    "supplier": "Positivo",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/7158/8/7158811P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/7158/8/7158811G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/7158/8/7158811_1GG.jpg"
+    }],
+    "skus": [{
+      "id": "7158812",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/7158812"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/7158811"
+      }
+    }
+  }, {
+    "id": "116042587",
+    "name": "Jogo de Talheres Tramontina Inox 48 Peças N.Kolor Amarelo",
+    "saleClassification": "C",
+    "supplier": "Tramontina",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/116042/5/116042587P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/116042/5/116042587G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/116042/5/116042587_1GG.jpg",
+      "extraLarge": "http://isoub1-a.akamaihd.net/produtos/01/00/item/116042/5/116042587SZ.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/116042/5/116042587_2GG.jpg"
+    }],
+    "skus": [{
+      "id": "116042595",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/116042595"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/116042587"
+      }
+    }
+  }, {
+    "id": "6600245",
+    "name": "COMPUTADOR DUAL CORE 512MB 80GB DVD VISTA SE - POSITIVO INFORMATICA LTDA",
+    "saleClassification": "C",
+    "skus": [{
+      "id": "6600246",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/6600246"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/6600245"
+      }
+    }
+  }, {
+    "id": "5097467",
+    "name": "Cafeteira Expresso Fun Kitchen",
+    "saleClassification": "C",
+    "supplier": "Fun Kitchen",
+    "skus": [{
+      "id": "5097469",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/5097469"
+        }
+      }
+    }, {
+      "id": "5097468",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/5097468"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/5097467"
+      }
+    }
+  }, {
+    "id": "271247",
+    "name": "Aparelho de Waffle Fun Kitchen",
+    "saleClassification": "C",
+    "supplier": "Fun Kitchen",
+    "skus": [{
+      "id": "271248",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/271248"
+        }
+      }
+    }, {
+      "id": "271249",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/271249"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/271247"
+      }
+    }
+  }, {
+    "id": "111503401",
+    "name": "Cueca D'Uomo Boxer Básica Cinza Mescla",
+    "saleClassification": "A",
+    "supplier": "D'Uomo",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/111503/4/111503401P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/111503/4/111503401G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/111503/4/111503401_1GG.jpg",
+      "extraLarge": "http://isoub1-a.akamaihd.net/produtos/01/00/item/111503/4/111503401SZ.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/111503/4/111503401_2GG.jpg"
+    }],
+    "skus": [{
+      "id": "111503436",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/111503436"
+        }
+      }
+    }, {
+      "id": "111503428",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/111503428"
+        }
+      }
+    }, {
+      "id": "111503444",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/111503444"
+        }
+      }
+    }, {
+      "id": "111503410",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/111503410"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/111503401"
+      }
+    }
+  }, {
+    "id": "342164",
+    "name": "Computador P4L-C2K INTEL PENTIUM 4 2.66GHZ 80GB 256MB CD-RW + LEITOR DE DVD",
+    "saleClassification": "C",
+    "supplier": "CCE",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/342/1/342164P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/342/1/342164G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/342/1/342164_1GG.jpg"
+    }],
+    "skus": [{
+      "id": "342165",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/342165"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/342164"
+      }
+    }
+  }, {
+    "id": "113585471",
+    "name": "Microondas Embutir 30L Inox - Elettromec",
+    "saleClassification": "C",
+    "supplier": "Elettromec",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/113585/4/113585471P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/113585/4/113585471G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/113585/4/113585471_1GG.jpg",
+      "extraLarge": "http://isoub1-a.akamaihd.net/produtos/01/00/item/113585/4/113585471SZ.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/113585/4/113585471_2GG.jpg"
+    }],
+    "skus": [{
+      "id": "113585480",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/113585480"
+        }
+      }
+    }, {
+      "id": "113585498",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/113585498"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/113585471"
+      }
+    }
+  }, {
+    "id": "112740986",
+    "name": "Jogo de Cama Casal Prata 4 peças 150 Fios Otto - Santista",
+    "rank": {
+      "position": 900000,
+      "top": 0,
+      "date": "2014-05-20T00:00:00.000Z",
+      "state": "DOWN"
+    },
+    "saleClassification": "C",
+    "supplier": "Santista",
+    "images": [{
+      "medium": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986P1.jpg",
+      "big": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986G1.jpg",
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986_1GG.jpg",
+      "extraLarge": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986SZ.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986_2GG.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986_3GG.jpg"
+    }, {
+      "large": "http://isoub1-a.akamaihd.net/produtos/01/00/item/112740/9/112740986_4GG.jpg"
+    }],
+    "skus": [{
+      "id": "112740994",
+      "_links": {
+        "self": {
+          "href": "http://api.soubarato.atlas.b2w/v2/sku/112740994"
+        }
+      }
+    }],
+    "_links": {
+      "self": {
+        "href": "http://api.soubarato.atlas.b2w/v3/product/112740986"
+      }
+    }
+  }],
+  "_result": {
+    "offset": 0,
+    "limit": 10,
+    "total": 63274
+  }
+}

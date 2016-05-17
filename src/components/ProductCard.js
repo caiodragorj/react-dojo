@@ -5,19 +5,12 @@ import ReactDOM from 'react-dom';
 import {Row, Col} from 'react-bootstrap';
 import SharedButton from './SharedButton';
 import Title from './Title';
+import Picture from './Picture';
 import Description from './Description';
 
 class ProductCard extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      title: '',
-      image: '',
-      description: '',
-      discount: '',
-      price: 'R$ 0,00',
-      amount: 0
-    }
   }
 
   componentWillMount() {
@@ -33,11 +26,11 @@ class ProductCard extends Component {
   }
 
   render(){
-    const { title, image, description, discount, price, amount } = this.state;
+    const { name, images, description, discount, price, amount = 0 } = this.state;
     return (
       <div>
-        <Title text={title} />
-        <img src={image} />
+        <Title text={name} />
+        <Picture image={images} />
         <Description text={description} />
         <p>Discount: {discount}</p>
         <p>Price: {price}</p>
