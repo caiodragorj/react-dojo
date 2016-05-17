@@ -27,10 +27,11 @@ class ProductCard extends Component {
 
   render(){
     const { name, images, description, discount, price, amount = 0 } = this.state;
+    const image = typeof images !== 'undefined' ? images[0] : '';
     return (
       <div>
         <Title text={name} />
-        <Picture image={images} />
+        <Picture image={image} />
         <Description text={description} />
         <p>Discount: {discount}</p>
         <p>Price: {price}</p>
