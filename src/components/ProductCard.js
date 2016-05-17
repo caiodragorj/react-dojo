@@ -4,6 +4,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Row, Col} from 'react-bootstrap';
 import SharedButton from './SharedButton';
+import Title from './Title';
+import Description from './Description';
 
 class ProductCard extends Component {
   constructor(props) {
@@ -34,9 +36,9 @@ class ProductCard extends Component {
     const { title, image, description, discount, price, amount } = this.state;
     return (
       <div>
-        <h1>{title}</h1>
+        <Title text={title} />
         <img src={image} />
-        <p>Description: {description}</p>
+        <Description text={description} />
         <p>Discount: {discount}</p>
         <p>Price: {price}</p>
         <SharedButton amount={amount} onClickShared={this.onClickShared.bind(this)} />
