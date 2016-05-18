@@ -7,7 +7,6 @@ import data from 'json!./data-product.json';
 
 import ProductList from './components/ProductList.js';
 
-
 const App = ({products}) =>
   <Grid>
     <ProductList products={products} />

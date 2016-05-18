@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 
-export default class Description extends Component {
-  constructor(props) {
-    super(props);
-  }
+const Description = ({text}) =>
+  <div data-component="description"
+       dangerouslySetInnerHTML={ { __html: text } }></div>;
 
-  render () {
-    return <div data-component="description">
-      <p>{this.props.text}</p>
-    </div>;
-  }
-}
+export default Description;

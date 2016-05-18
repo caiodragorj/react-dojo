@@ -7,6 +7,7 @@ import SharedButton from './SharedButton';
 import Title from './Title';
 import Picture from './Picture';
 import Description from './Description';
+import Discount from './Discount';
 
 class ProductCard extends Component {
   constructor(props) {
@@ -26,14 +27,14 @@ class ProductCard extends Component {
   }
 
   render(){
-    const { name, images, description, discount, price, amount = 0 } = this.state;
+    const { name, images, description, offers, price, amount = 0 } = this.state;
     const image = typeof images !== 'undefined' ? images[0] : '';
     return (
       <div>
         <Title text={name} />
         <Picture image={image} />
         <Description text={description} />
-        <p>Discount: {discount}</p>
+        <Discount offers={offers} />
         <p>Price: {price}</p>
         <SharedButton amount={amount} onClickShared={this.onClickShared.bind(this)} />
       </div>
