@@ -21,8 +21,10 @@ class ProductCard extends Component {
   }
 
   onClickShared(){
+    var amount=this.state.amount || 0;
+
     this.setState({
-      amount: this.state.amount + 1
+      amount: amount + 1
     });
   }
 

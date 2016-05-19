@@ -1,6 +1,8 @@
 {
 	"products": [{
 		"id": "8460788",
+    "price": "9,99",
+    "description": "Caio, Yuri e Menino Gui",
 		"name": "Enfeite De Mesa Letra M 18cm X 18mm - Madeira Mdf",
 		"rating": {
 			"reviews": 0,
